@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	<TabHost
+		android:id="@android:id/tabhost"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout 
+		    android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<RelativeLayout 
+			    android:layout_height="44dp"
+			    android:layout_width="fill_parent"
+			    android:background="@drawable/header">
+			    <TextView 
+			        android:layout_height="wrap_content"
+			        android:layout_width="wrap_content"
+			        android:text="公共自行车"
+			        android:textColor="@color/white"
+			        android:textSize="20sp"
+			        android:textStyle="bold"
+			        android:layout_centerInParent="true"/>
+			</RelativeLayout>
+			<FrameLayout android:id="@android:id/tabcontent"
+				android:layout_weight="1" 
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent" />
+			<TabWidget android:id="@android:id/tabs"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/tabbar_background"/>
+		</LinearLayout>
+	</TabHost>
+</LinearLayout>

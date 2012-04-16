@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zyf.bike.suzhou"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <application
+       android:theme="@android:style/Theme.Light.NoTitleBar"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <uses-library android:name="com.google.android.maps" />
+        <activity
+            android:name=".LauncherActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.LiveActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.StationActivity"/>
+        <activity android:name=".ui.StationActivityBaidu"/>
+        <activity android:name=".ui.StationActivityGoogle"/>
+        <activity android:name=".ui.CommonWebView"/>
+        <activity android:name=".ui.GuideActivity"/>
+        <activity android:name=".ui.QueryActivity"/>
+        <activity android:name=".ui.MoreActivity"/>
+        <activity android:name=".ui.Feedback"/>
+        <meta-data android:value="4f86549c5270151081000007" android:name="UMENG_APPKEY"></meta-data>
+    </application>
+    <!-- 网络连接 -->
+   	<uses-permission android:name="android.permission.INTERNET" />
+   	<!-- Umeng Required -->
+   	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+	<!-- Baidu Required -->
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>  
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission> 
+	<uses-permission android:name="android.permission.CALL_PHONE"></uses-permission> 
+</manifest>
