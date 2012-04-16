@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <ScrollView android:scrollbarStyle="outsideOverlay" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <RelativeLayout android:id="@+id/rl_about" android:background="@drawable/list_top_bg" style="@style/more_rl_style" android:onClick="doAbout">
+                    <ImageView style="@style/more_arrow_style" />
+                    <TextView android:text="@string/more_about" style="@style/more_text_style" />
+                </RelativeLayout>
+                <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout android:id="@+id/rl_feedback" android:background="@drawable/list_mid_bg" style="@style/more_rl_style" android:onClick="doFeedback">
+                    <ImageView style="@style/more_arrow_style" />
+                    <TextView android:text="@string/more_feedback" style="@style/more_text_style" />
+                </RelativeLayout>
+                <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout android:id="@+id/rl_goodApps" android:background="@drawable/list_bottom_bg" style="@style/more_rl_style">
+                    <ImageView style="@style/more_arrow_style" />
+                    <TextView android:text="@string/more_align" style="@style/more_text_style" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <RelativeLayout android:id="@+id/rl_about" android:background="@drawable/list_top_bg" style="@style/more_rl_style" android:onClick="doCall0">
+                    <TextView android:text="@string/more_call0" style="@style/more_text_style" />
+                </RelativeLayout>
+                <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip"/>
+                <RelativeLayout android:id="@+id/rl_feedback" android:background="@drawable/list_mid_bg" style="@style/more_rl_style" android:onClick="doCall1">
+                    <TextView android:text="@string/more_call1" style="@style/more_text_style" />
+                </RelativeLayout>
+                <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout android:id="@+id/rl_goodApps" android:background="@drawable/list_bottom_bg" style="@style/more_rl_style" android:onClick="doCall2">
+                    <TextView android:text="@string/more_call2" style="@style/more_text_style" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+	</ScrollView>
+</LinearLayout>

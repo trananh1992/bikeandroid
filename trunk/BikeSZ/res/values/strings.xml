@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">苏州公共自行车</string>
+
+    <string name="about_title">关于作者</string>
+    <string name="about_message">\t作者:幻影浪子 \n\n\tQQ: 58678211  \n\n\tEmail: feng88724@gmail.com \n\n\t有任何问题或建议请与本人联系!</string>
+    
+    <!-- 更多 -->
+    <string name="more_about">关于我们</string>
+    <string name="more_align">免责声明</string>
+    <string name="more_feedback">意见反馈</string>
+    <string name="more_call0">服务热线①</string>
+    <string name="more_call1">服务热线②</string>
+    <string name="more_call2">办卡热线</string>
+    
+    <string name="mess_availbike">可借车数: %1$s</string>
+    <string name="mess_parkbike">可停车数: %1$s</string>
+</resources>
